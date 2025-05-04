@@ -11,7 +11,7 @@ pipeline {
 
         stage('Clonar o código') {
             steps {
-                git 'https://github.com/Borrach1nha/pipeline-testes.git'
+                git branch: 'main', url: 'https://github.com/Borrach1nha/pipeline-testes.git'
             }
         }
 
