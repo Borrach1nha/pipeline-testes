@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        
+        stage('Hello') {
+            steps {
+                echo 'Salve, primeira pipeline'
+            }
+        }
+
         stage('Clonar o código') {
             steps {
                 git 'https://github.com/Borrach1nha/pipeline-testes.git'
